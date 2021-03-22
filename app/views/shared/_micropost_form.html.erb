@@ -1,5 +1,6 @@
 <%= form_with(model: @micropost, local: true) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
+  <%= f.select :category, [['司法試験答案', 0],['司法試験論証', 1]] ,:prompt => "カテゴリを選択してください"%>
   <div class="field">
     <%= f.text_area :content, placeholder: "Compose new micropost..." %>
   </div>
