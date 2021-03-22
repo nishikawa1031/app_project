@@ -7,8 +7,17 @@ ja:
       # view側： User.model_name.human => "ユーザ" / t("activerecord.models.user")と同じ
       user: ユーザー
       board: 掲示板
+      admin_user: "管理者"
+      comment: "コメント"
+      book: "書籍"
     # model毎に定義したいattributesを記述
     attributes:
+        admin_user:
+          id: "登録番号"
+          email: "メールアドレス"
+          current_sign_in_at: "ログイン状態"
+          sign_in_count: "ログイン回数"
+          created_at: "作成日"
         user:
           id: ID
           # view側： User.human_attribute_name :name => "名前" /　t("activerecord.attributes.user.name")と同じ
