@@ -21,6 +21,7 @@ gem 'rails-i18n'
 gem 'devise-i18n'
 gem 'activeadmin'
 gem 'devise'
+gem 'pry-rails'
 
 group :development, :test do
   gem 'sqlite3', '1.4.1'
